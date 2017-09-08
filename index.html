@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>Home Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel ="stylesheet" type="text/css" href="css/index.css" >
+<script src="jquerry/jquerry.js">
+    </script>
+    
+<script>      
+$("document").ready(function () {       
+
+$(" .inner-container3  #submit3").on( "click" ,function() { 
+     
+    var usrname = $("div.inner-container3 #inp1").val().toLowerCase().trim();
+    var pass = $("div.inner-container3 #inp2").val().toLowerCase().trim();
+    
+    if (((usrname == "admin1") && (pass == "pass1")) || ((usrname == "admin2") && (pass == "pass2")) || ((usrname == "admin3") && (pass == "pass3")) )
+    
+    {
+        window.location = 'admin_login.html';
+            return false;
+    }
+    
+else 
+    
+    alert("PASSWORD AND USERNAME NOT REGISTERED");
+    
+    
+});      
+    });    
+</script>
+</head>
+<body>
+<div id = "banner"></div>
+<div class ="menu">
+             <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="">LOGIN</a></li>
+          <li><a href="https://sgtuniversity.ac.in/about-sgt-university/">ABOUT</a></li>
+          <li><a href="https://sgtuniversity.ac.in/admission-help-line/">CONTACT</a></li>
+             </ul>
+</div>
+<div class ="container">
+<h3 id ="head1"><a href= "" class="anchor">STUDENT'S LOGIN</a></h3>
+<h3 id ="head2"><a href="" class ="anchor">ADMIN'S LOGIN</a></h3>
+<h3 id ="head3"><a href ="" class ="anchor">FACULTY'S LOGIN</a></h3>
+<div class ="inner-container1">
+ <img  src ="images/student.png" >
+               <form action="php/student_login.php" target ="" method ="POST">
+               <input type = "text" id="inp1"  name="username" placeholder="Enter Username" maxlength="25"><br>
+               <input type = "password" id="inp2" name="password" placeholder="Enter Password" maxlength="12"><br>
+               <input type="submit" id="submit1" value="LOGIN"><br>
+               <a href="">Forgot your Password ?</a>
+               </form>
+			   </div>
+ <div class ="inner-container2">
+ <img  src ="images/faculty1.png" >
+               <form action="php/faculty_login.php" target ="" method="POST">
+               <input type = "text" id="inp1"  name="fac_usr" placeholder="Enter Username" maxlength="25"><br>
+               <input type = "password" id="inp2"   name="fac_pass" placeholder="Enter Password" maxlength="12"><br>
+               <input type="submit" id="submit2" value="LOGIN"><br>
+               <a href="">Forgot your Password ?</a>
+               </form>
+ </div>
+ <div class ="inner-container3">
+ <img  src ="images/admin.png" >
+               <form action="" target ="" method ="">
+               <input type = "text" id="inp1"   placeholder="Enter Username" maxlength="25"><br>
+               <input type = "password" id="inp2"   placeholder="Enter Password" maxlength="12"><br>
+               <input type="submit" id="submit3" value="LOGIN"><br>
+               <a href="">Forgot your Password ?</a>
+               </form>
+ </div>
+
+</div>
+
+
+<div id ="artboard">
+     <h3>INVOLVED FALCULTY</h3>
+    <div id ="board1" class ="board">
+	 <img src="images/cse_depart.jpg"><br>
+     <h4>CSE DEPARTMENT</h4><br>
+      <p>The Department of Computer Science and Engineering  <a href="https://engineering.sgtuniversity.ac.in/department-computer-science-and-engineering/">read more...</a>
+	  </p><br>
+      <button  class ="board_btn">VISIT US</button> 
+    </div>
+	
+	<div id ="board2" class ="board">
+	 <img src="images/me_depart.jpg"><br>
+     <h4>MECHANICAL DEPART.</h4><br>
+      <p>The Department of Mechanical at SGT University is <a href="https://engineering.sgtuniversity.ac.in/dept-of-mechanical-engineering/">read more...</a>
+	  </p><br>
+      <button  class ="board_btn">VISIT US</button> 
+    </div>
+	
+	
+	<div id ="board3" class ="board">
+	 <img src="images/civil_depart.jpg"><br>
+     <h4>CIVIL DEPART.</h4><br>
+      <p>The Department of Civil at SGT University is <a href="https://engineering.sgtuniversity.ac.in/civil-engineering/">read more...</a>
+	  </p><br>
+      <button  class ="board_btn">VISIT US</button> 
+    </div>
+	
+	
+	<div id ="board4" class ="board">
+	 <img src="images/ece_depart.png"><br>
+     <h4>ECE DEPARTMENT</h4><br>
+      <p>The Department of Electronics at SGT University is <a href="https://engineering.sgtuniversity.ac.in/electronics-comm-engg-dept-electronics-and-communication-engg/">read more...</a>
+	  </p>
+	  <br>
+      <button  class ="board_btn">VISIT US</button> 
+    </div>
+</div>
+
+
+<div class="slide_cont">
+            <div class="slider">
+                      <img class="imgsl" id="sl1"src="images/slides/slide1.jpg">
+                      <img class="imgsl" id="sl2"src="images/slides/slide2.jpg">
+                      <img class="imgsl"  id="sl3"src="images/slides/slide3.jpg">
+            </div>
+			<div class="inner_cont" id="inner1">
+			          <img src="images/help.jpg">
+					 <b> <p>SGT University
+                          Chandu-Budhera, Gurugram-Badli Road, Gurugram Haryana 122505<br>
+                          Phone :- 0124-2278183-186 <br>
+                          Email :- info@sgtuniversity.org</p></b>
+			</div>
+			
+			<div class="inner_cont" id="inner2">
+			           <iframe
+					      src ="https://www.youtube.com/embed/ogqMCjf637E">
+					  </iframe>
+					   <p><b>
+					   FOR MORE VIDEOS <br> SUSCRIBE SGT UNIVERSITY YOUTUBE CHANNEL </b> 
+					   <a href="https://www.youtube.com/channel/UCRF2GrjDLP5fQ_Tr78qj_5g">
+					   <img src="images/youtubesub.png"> </a>
+					   </p>
+			</div>
+</div>
+
+
+<div class="footer">
+                 <a href ="" ><img src="images/footers/insta.png" id="insta" ></a>
+                 <a href ="https://www.facebook.com/sgtuniversitygurgaon" ><img src="images/footers/fb.png" id ="fb"></a>
+                 <a href ="" ><img src="images/footers/pin.png" id="pin" ></a>
+                 <a href ="https://www.linkedin.com/in/sgtuniversity" ><img src="images/footers/lin.png" id="lin"></a>
+                 <a href ="https://twitter.com/SGT_UNIVERSITY" ><img src="images/footers/twitter.png" id="twit"></a>
+                 <a href ="https://plus.google.com/u/0/+SGTUniversityGurgaonNCR" ><img src="images/footers/google.png" id="goog"></a>
+                 <a href ="https://www.youtube.com/channel/UCRF2GrjDLP5fQ_Tr78qj_5g" ><img src="images/footers/youtube.png" id="yout"></a>
+
+</div>
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("imgsl");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+
+</body>
+</html>

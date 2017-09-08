@@ -1,0 +1,175 @@
+<style>
+    
+    * {
+    margin : 0px;
+    padding : 0px;
+    text-decoration: none;
+        }
+    
+    body {
+        
+    background-image: url("images/hd1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    #div_reg {
+    margin-top: 100px;
+    margin-left : 300px;
+    height : 430px;
+    width : 700px;
+    background-color : rgba(102, 102, 102 , 0.5) ;    
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);    
+    }
+    
+    #head_divs {
+        height: 50px;
+        position : relative;
+        
+    }
+    
+    
+    #head_divs h1 {
+         
+    position : absolute;
+    top : -10px;    
+    left : 200px;     
+    color : white;
+    background-color : #33cc33;
+    letter-spacing: 2px;
+    height : 30px;
+    width : 250px;
+    padding-left : 10px;
+    padding-right : 10px;
+    padding-bottom : 10px;
+    padding-top : 5px;     
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);            
+        }    
+
+    #div_reg .slot {
+    background-color : white;
+    height :   50px;
+    margin-bottom : 2px;
+    position : relative ;
+        
+        
+    } 
+    
+    .slot .field {
+    position : absolute ;
+    letter-spacing : 2px;
+    top: 10px;
+    left : 40px;
+    font-size : 17px;    
+    }
+    
+    
+    .slot input[type="text"] {
+        position: absolute;
+        top : 10px;
+        left : 400px;
+    }
+
+    
+    
+     .slot input[type="password"] {
+        position: absolute;
+        top : 10px;
+        left : 400px;
+    }
+
+    
+     .slot select {
+        position: absolute;
+        top : 10px;
+        left : 400px;
+    }
+
+
+    
+    .slot #check_div {
+    
+    position : absolute ;
+    height : 50px;
+    width : 400px;
+    top : 5px;
+    left : 270px;    
+    }    
+    
+    
+#btn_div {
+position : relative;
+background-color: white;
+height: 70px;    
+    }    
+    
+#btn_div  .btn {
+ padding-top : 7px;
+ padding-left : 7px;
+ padding-right : 7px;
+ padding-bottom : 7px;
+ border : 2px solid  #33cc33;
+ background-color : white;
+ margin-right : 40px;
+ position : absolute;
+}
+    
+#btn_div .btn:hover {
+ background-color : #33cc33;
+ color : white;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);       
+    }      
+    
+ #btn_div #btn1
+    {
+position: absolute;
+top : 15px;
+left : 200px;        
+    }
+    
+#btn_div #btn2 {
+position : absolute;
+top : 15px;
+left : 350px;
+    
+    }
+    
+    
+</style>
+
+<div id="div_reg">
+
+<div id="head_divs">
+        <h1>FACULTY REG</h1>
+</div>
+    
+<Form method="POST" action="php/faculty_reg.php">
+    <div class="slot"> <div class="field">   ID :    </div>        <input type="text"  name="id_inp"></div>
+    <div class="slot"> <div class="field">   PASSWORD :    </div>  <input type="password" name="password_inp" ></div>
+    <div class="slot"> <div class="field">   NAME :    </div>      <input type="text"  name="name_inp"></div>
+    <div class="slot"> <div class="field">	 DEPARTMENT: </div>    <input type="text"  name="department_inp"></div>
+	<div class="slot"> <div class="field">	  HOD: </div>          <select name="hod_inp">
+                                                                   <option value="yes">YES</option>        
+                                                                   <option value="no">NO</option>   
+                                                                   </select></div>
+    <div class="slot"> <div class="field">	  SEMESTER: </div>  
+    <div id="check_div">
+            <input type="checkbox"  name="ch_sem1" value="1"> SEM 1 
+			<input type="checkbox"  name="ch_sem2" value="1"> SEM 2
+            <input type="checkbox"  name="ch_sem3" value="1"> SEM 3
+            <input type="checkbox"  name="ch_sem4" value="1"> SEM 4
+            <input type="checkbox"  name="ch_sem5" value="1"> SEM 5
+            <input type="checkbox"  name="ch_sem6" value="1"> SEM 6
+            <input type="checkbox"  name="ch_sem7" value="1"> SEM 7
+            <input type="checkbox"  name="ch_sem8" value="1"> SEM 8</div>   </div>
+    <div id="btn_div">		
+        <input type="submit"  class ="btn"  id="btn1" value="SUBMIT">
+        <input type="reset"  class = "btn" id="btn2"  value="RESET" >
+     </div>
+        
+
+
+</form>
+			
+</div>			

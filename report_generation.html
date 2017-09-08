@@ -1,0 +1,148 @@
+<style>
+    
+*  {
+margin : 0px;
+padding: 0px;
+text-decoration: none;
+list-style: none;            }    
+    
+    
+    body {
+        
+    background-image: url("images/hd1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    
+#repo_cont {    
+    background-color: rgba(102, 102, 102 , 0.5);
+    height: 215px;
+    width: 700px;
+	margin-top : 100px;
+	margin-left : 250px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);      
+        }   
+    
+    
+    #repo_cont #repo_head {
+    position : relative;
+    height: 50px;    
+         }
+    
+    
+    
+
+    
+#repo_cont #repo_head h1 {
+position : absolute;    
+padding-top : 10px;
+padding-left : 20px;
+padding-bottom : 10px;
+background-color : #33cc33;
+color : white;
+width : 370px;
+letter-spacing : 5px;
+font-size : 24px;
+top : -10px;
+left : 150px;    
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+border-radius : 3%;    
+    }    
+    
+    
+    
+ #repo_cont .slot {
+    font-size : 19px; 
+    background-color : white;
+    height :   50px;
+    margin-bottom : 2px;
+    position : relative ;
+    }
+    
+    
+
+.slot .fields {
+margin-left : 60px;
+padding-top : 10px;    
+        
+    }
+
+.slot input {
+position : absolute;
+top : 10px;
+left : 400px;    
+        
+    }  
+    
+    
+.slot select {
+position : absolute;
+top : 10px;
+left : 400px;    
+        
+    } 
+    
+#btn_div {
+background-color:white;         
+height : 60px;        
+position : relative;    
+    }    
+    
+    
+#btn_div .btn {
+ padding-top : 7px;
+ padding-left : 7px;
+ padding-right : 7px;
+ padding-bottom : 7px;
+ border : 2px solid  #33cc33;
+ background-color : white;
+ margin-right : 40px;
+ position : absolute;
+}
+
+
+#btn_div .btn:hover {
+ background-color : #33cc33;
+ color : white;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}    
+    
+    
+#btn_div #btn1 {
+top : 10px;        
+left : 250px;        
+    }   
+    
+    
+#btn_div #btn2 {
+top : 10px;
+left : 340px;    
+    }
+</style> 
+
+<div id="repo_cont">
+<div id="repo_head">   
+<h1>REPORT GENERATION</h1>
+</div>     
+<Form action="php/report_gen_submit.php" method="post" >
+
+   
+<div class="slot">	<div class="fields">		ID:            </div> <input type="text" name="ID" > </div>
+<div class="slot">	<div class="fields">		DEPARTMENT :   </div><select name="DEPT">
+                                                                     <option>COMPUTER SCIENCE</option>
+                                                                     <option>MECHANICAL</option>
+                                                                     <option>ELECTRICAL</option>
+                                                                     <option>CIVIL</option>
+    
+    
+    </select> </div>
+    
+<div id="btn_div">    
+	        <input class="btn" type="submit" id="btn1" value="SUBMIT">
+            <input  class="btn" type="reset"  id="btn2" value="RESET" >	
+</div>
+			
+    </Form>    
+</div>

@@ -1,0 +1,157 @@
+<style>
+* {
+margin : 0px;
+padding : 0px;
+text-decoration : none;
+}
+
+    
+body {
+        
+    background-image: url("images/hd1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }    
+    
+.reg_div { 
+background-color :  rgba(102, 102, 102 , 0.5) ;
+margin-top: 100px;
+margin-left : 300px;
+height : 420px;
+width : 600px;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.slot {
+width : 600px;        
+height : 50px;
+position: relative;
+margin-bottom : 2px;
+font-size: 18px;
+letter-spacing: 2px;
+background-color: white;
+    }
+.slot .fields {
+position : absolute;
+top : 10px;
+left: 60px;    
+width : 200px;
+    
+    }
+.slot input[type='text'] {
+position : absolute;
+top : 10px;
+left: 350px;    
+    }    
+
+.slot input[type='password'] {
+position : absolute;
+top : 10px;
+left: 350px;    
+    }
+    
+#head_div {
+height : 60px;
+position : relative;    
+    }
+#head_div h1 
+    {
+color : white;    
+position : absolute;
+top : -10px;
+left : 170px;    
+background-color: #33cc33;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+//*border-radius: 3%; *//  
+padding-top : 7px;
+padding-bottom : 7px;
+padding-left : 10px;
+padding-right : 10px;
+    
+    }    
+    
+#btn_div {
+height : 60px;
+position : relative;
+background-color: white;        
+    }    
+    
+#btn_div  .btn {
+ padding-top : 7px;
+ padding-left : 7px;
+ padding-right : 7px;
+ padding-bottom : 7px;
+ border : 2px solid  #33cc33;
+ background-color : white;
+ margin-right : 40px;
+ position : absolute;
+}
+    
+#btn_div .btn:hover {
+ background-color : #33cc33;
+ color : white;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);       
+    }  
+    
+#btn1 {
+top : 10px;
+left: 180px;   
+    }
+    
+#btn2 {
+top : 10px;
+left : 350px;    
+    }    
+</style>
+
+<div class="reg_div">
+
+<form method="POST" action="php/student_reg.php">
+<div id="head_div">
+        <h1>STUDENT REG.</h1>
+</div>
+    
+<div class="slot">
+
+<div class="fields">            ID : </div>  <input type="text" name="id">
+			
+</div>
+    
+<div class="slot">
+
+<div class="fields">            PASSWORD : </div>  <input type="password" name="password">
+			
+</div>
+    
+    
+<div class="slot">
+
+<div class="fields">            NAME : </div>  <input type="text" name="name">
+			
+</div>
+    
+ <div class="slot">	
+     
+<div class="fields">			BRANCH :  </div><input type="text"  name="branch">
+			
+</div>
+    
+<div class="slot">
+    
+<div class="fields">			SEMESTER :  </div><input type="text" name="semester">
+			
+</div>
+
+<div class="slot">
+    
+<div class="fields">			ROLL NO : </div><input type ="text"  name="roll_no">
+			
+</div>
+    
+<div id="btn_div">
+			<input Type="submit" class ="btn"  id ="btn1" value="SUBMIT">
+			<input Type="reset"   class ="btn"  id="btn2" value="RESET">
+</div>
+</form>
+</div>

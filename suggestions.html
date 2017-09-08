@@ -1,0 +1,113 @@
+<style>
+
+*{
+margin :0px;
+padding : 0px;
+
+}
+    
+body {
+        
+    background-image: url("images/hd1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }    
+    
+    
+ .suggest_cont {
+   margin-top: 70px;
+   margin-left: 300px; 
+   height : 400px;
+   width : 550px;
+   background-color : rgba(102, 102, 102 , 0.5);
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+ 
+ 
+ .suggest_cont #head_div {
+ position : relative;
+ height : 90px;
+ 
+ }
+ 
+ .suggest_cont #head_div h1{
+       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      letter-spacing : 5px;
+      font-size : 26px;
+      font-family : 'AvenueX';
+      position : absolute;
+      background-color : #33cc33;
+      border-radius : 4%;
+      color : white;
+      top : 10px;
+      left : 140px;
+      padding-left: 20px;	
+	  padding-top : 10px;
+	  padding-bottom : 10px;
+	  padding-right : 20px;
+	  
+ }
+
+ .suggest_cont #inner_div #text_div {
+    height: 20;
+    padding-top: 10px;
+    padding-left: 200px;
+    font-size : 18px;
+	letter-spacing : 3px;
+ 
+ }
+ 
+ 
+ .suggest_cont #inner_div #textarea_div {
+    height: 120px;
+	letter-spacing : 2px;
+    padding-top: 15px;
+    padding-left: 19px;
+ 
+ }
+
+ 
+ .suggest_cont #inner_div #btn_div  .btns {
+ padding-top : 7px;
+ padding-left : 7px;
+ padding-right : 7px;
+ padding-bottom : 7px;
+ border : 2px solid  #33cc33;
+ background-color : white;
+ margin-right : 40px;
+ }
+ 
+ .suggest_cont #inner_div #btn_div  .btns:hover {
+ 
+ background-color : #33cc33;
+ color : white;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+ 
+ .suggest_cont #inner_div #btn_div {
+ padding-top: 10px;
+ padding-left: 190px;
+ }
+ 
+ 
+</style>
+<div class="suggest_cont">
+<div id="head_div">
+              <h1>SUGGESTIONS</h1>
+</div>
+<div id="inner_div">
+<form>
+
+  <div id="text_div">   SUGGESTIONS : </div>
+        <div id="textarea_div">      <textarea rows="7" cols="70"> 
+              Please provide us with your suggestions
+              </textarea>
+	   </div>      
+<div id="btn_div">	   
+<input type="submit" class="btns"  value="SUBMIT" >
+<input type="reset"   class="btns"  value="RESET"  >
+</div>
+</form>
+</div>
+</div>
