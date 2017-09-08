@@ -1,0 +1,175 @@
+* {
+	padding:0;
+	margin: 0;
+	text-decoration: none;
+	list-style : none;
+}
+
+.topmenu {
+	width : 100%;
+	position : absolute;
+	top:0;
+	height : 70px;
+	background-color : #99c2ff;
+}
+
+.header {
+	margin-top : 20px;
+	float : left;
+	margin-left : 20px;
+}
+.header h1{
+	font-family: 'Jaapokki subtract';
+	letter-spacing : 5px;
+	
+}
+.header h1 a{
+color : black;
+}
+
+.menu {
+	float : right;
+	margin-top: 25px;
+}
+
+.menu ul li{
+	display : in-line;
+	list-style : none;
+	display : block;
+	width : 120px;
+	float : left;
+	margin-right : 5px;
+}
+
+.menu  ul li  a {
+
+	padding : 10px auto;
+	color: black;
+	letter-spacing : 3px;
+	font-size : 18px;
+	
+}
+
+
+
+#sidebar {
+	
+	position : absolute;
+	clear : both;
+	height : 780px;
+	background-color : rgba(0, 153, 255,0.5);
+	width : 200px;
+	margin-top: 70px;
+	padding-top : 10px; 
+	display : block;
+	left : 0px;
+	transition : left 0.3s linear ;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#sidebar.hide {
+	left : -200px;
+	transition : left 0.3s linear ;
+}
+
+#sidebar  a {
+	font-family : 'AvenueX';
+	display : block;
+	width : 180px;
+    height : 40px;
+	font-size : 20px;
+	padding-top : 10px;
+	padding-left : 8px;
+    margin-left : 5px; 
+    color : #000066;	
+}
+
+#sidebar .def {
+	border-bottom: 1px solid #009999;
+}
+
+#sidebar .def {
+	color:white;
+	background-color : #009999;
+}
+
+#sidebar .non-def:hover {
+	background-color:#3399ff ;
+	color : white;
+	border-bottom : 3px solid #009999;
+	
+}
+
+#sidebar img {
+	height : 120px;
+	width : 130px;
+	border-radius : 60%;
+	border : 1px solid  grey;
+	margin-left : 30px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#sidebar h1 {
+	margin-top:25px;
+	font-size : 23px;
+	font-family : 'Bushcraft one';
+	margin-bottom : 15px;
+	text-align : center;
+	margin-left : 10px;
+	width : 170px;
+	height : 40px;
+	padding-top : 11px;
+	border : 2px solid grey;
+	letter-spacing : 3px;
+	background-color :  #66c2ff;
+}
+
+ .sidebar_btn {
+	display : inline-block;
+	vertical-align : middle;
+	height : 20px;
+	width : 20px;
+	margin-top : 50px;
+	margin-left : 20px;
+	cursor : pointer;
+	position : absolute;
+	right : -30px;
+	top: -20px;
+}
+
+#sidebar button {
+	border-radius : 6%;
+	background : #00ff00;
+	color : white;
+	margin-left : 100px;
+	font-size : 11px;
+	cursor : pointer;
+	border : 1px solid grey;
+	padding: 2px 2px;
+	position : relative;
+	top: -20px;
+}
+
+#sidebar button:hover {
+	background : #00b300;
+	color : white;
+	
+}
+.sidebar_btn span{
+	height : 2px;
+	background-color: black;
+	display : block;
+	margin-bottom : 5px;
+	
+}
+
+
+.container {
+	
+	width:1147px;
+	float :left;
+	height : 790px;
+	margin-top : 70px;
+	margin-left : 200px;
+	left :200px;
+}
