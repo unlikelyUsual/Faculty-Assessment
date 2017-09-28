@@ -24,8 +24,10 @@
 <div id="sidebar">
 
 
-                   <ul>
-				         <img src="images/student.png">
+
+				         <img id="stu_img" src="images/student.png">
+                 <a href="index.html" id="logout"><img src="images/logout.png" id="logout_img"></a>
+                 <ul id="sidebar_div">
                          <h1>STUDENT</h1>
                          <li><a href="student_feedback.php" class ="def">FEEDBACK</a></li>
 						 <li><a href="suggestions.html" class="non-def">SUGGESTIONS</a></li>
@@ -66,7 +68,7 @@ $('#container').load('student_feedback.php');
 });
 
 
-$(' #sidebar a').click(function(){
+$('#sidebar_div a').click(function(){
 
 var page = $(this).attr('href');
 $('#container').load(page);

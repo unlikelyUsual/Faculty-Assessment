@@ -21,7 +21,7 @@
 .header h1{
 	font-family: 'Jaapokki subtract';
 	letter-spacing : 5px;
-	
+
 }
 .header h1 a{
 color : black;
@@ -47,20 +47,20 @@ color : black;
 	color: black;
 	letter-spacing : 3px;
 	font-size : 18px;
-	
+
 }
 
 
 
 #sidebar {
-	
+
 	position : absolute;
 	clear : both;
 	height : 780px;
 	background-color : rgba(0, 153, 255,0.5);
 	width : 200px;
 	margin-top: 70px;
-	padding-top : 10px; 
+	padding-top : 10px;
 	display : block;
 	left : 0px;
 	transition : left 0.3s linear ;
@@ -80,14 +80,14 @@ color : black;
 	font-size : 20px;
 	padding-top : 10px;
 	padding-left : 8px;
-    margin-left : 5px; 
-    color : #000066;	
+    margin-left : 5px;
+    color : #000066;
 }
 
 #sidebar #repo_gen {
-        
-height: 50px;    
-    
+
+height: 50px;
+
 }
 
 #sidebar .def {
@@ -103,7 +103,7 @@ height: 50px;
 	background-color:#3399ff ;
 	color : white;
 	border-bottom : 3px solid #009999;
-	
+
 }
 .sub {
 	display : none;
@@ -111,13 +111,34 @@ height: 50px;
 
 
 
-#sidebar img {
+#sidebar #admin_img {
 	height : 120px;
 	width : 130px;
 	border-radius : 60%;
 	border : 1px solid  grey;
 	margin-left : 30px;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+#sidebar #logout_img {
+	border-radius : 60%;
+		border : 1px solid  grey;
+		margin-left : 30px;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	  height: 40px;
+	  width : 40px;
+	  position: absolute;
+		top : -50px;
+		left : 90px;
+
+}
+
+
+#sidebar #logout {
+
+position : absolute;
+
 }
 
 #sidebar h1 {
@@ -164,14 +185,14 @@ height: 50px;
 #sidebar button:hover {
 	background : #00b300;
 	color : white;
-	
+
 }
 .sidebar_btn span{
 	height : 2px;
 	background-color: black;
 	display : block;
 	margin-bottom : 5px;
-	
+
 }
 
 
@@ -180,7 +201,7 @@ height: 50px;
 }
 
 .container {
-	
+
 	width:1147px;
 	float :left;
 	height : 790px;
